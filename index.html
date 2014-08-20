@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Swift Apps with Superpowers</title>
+
+		<meta name="description" content="The Evolution of Web Applications">
+		<meta name="author" content="David East">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/super.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-52335082-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<small id="era">
+
+			</small>
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<!--
+					Intro
+				-->
+				<section title="">
+					<h1><span class="text-swift">Swift</span> Apps with Superpowers</h1>
+					<img src="/images/swift-logo.png" alt="" >
+					<h1 class="big-plus">+</h1>
+					<img src="/images/firebase-logo.png" alt="" >
+				</section>
+
+				<section>
+
+					<div>
+						<h2>Kat Fang / <a href="http://twitter.com/fangedkat">@fangedkat</a></h2>
+						<h2>Core Developer</h2>
+					</div>
+					<br />
+					<div>
+						<h2>David East / <a href="http://twitter.com/eastdotnet">@eastdotnet</a></h2>
+						<h2>Developer Advocate</h2>
+					</div>
+
+				</section>
+
+				<section>
+					<h2>Agenda</h2>
+					<ol>
+						<li>Overview of Firebase</li>
+						<li>Live coding</li>
+						<li>Questions</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>What is Firebase?</h2>
+					<p>Store and sync data in realtime</p>
+					<img src="/images/firebase-logo.png" alt="" >
+				</section>
+
+				<section>
+					<h2>List features</h2>
+				</section>
+
+				<!--
+				When you're builing your app the first step is to just make it work on your device.
+				You don't even think about getting other devices to talk to each other or any type of sync.
+
+				Our app does cool things. But cool things are even cooler when they're done together
+				-->
+				<section>
+					<h2>Normal Routine</h2>
+					<p>TODO: lonely looking app</p>
+				</section>
+
+				<!--
+				However with Firebase, we can give it superpowers from the beginning.
+				-->
+				<section>
+					<h2>Firebase gives your app superpowers</h2>
+				</section>
+
+				<section>
+					<img src="/images/ios-sdk-color.png" alt="">
+				</section>
+
+				<section>
+					<img src="/images/superman.png" alt="">
+				</section>
+
+				<section>
+					<h2>CODE SAMPLE FOR .setValue</h2>
+					<p>
+						Possibly other CRUD values too
+					</p>
+				</section>
+
+				<section>
+					<img src="/images/realtime-bam-color.png" alt="">
+				</section>
+
+				<section>
+					<img src="/images/the-flash.png" alt="" class="flash-bump">
+				</section>
+
+				<section>
+					<h2>CODE SAMPLE FOR .on</h2>
+					<p>
+
+					</p>
+				</section>
+
+				<section>
+					<h2>Disk Persistence</h2>
+				</section>
+
+				<section>
+					<img src="/images/iron-man.png" alt="" class="flash-bump">
+					<!-- <img src="/images/iron-man.jpg" alt="" class=""> -->
+				</section>
+
+				<section>
+					<h2>Set up for Disk Persistence</h2>
+				</section>
+
+				<section>
+					<h2>Simple Login</h2>
+				</section>
+
+				<section>
+					<img src="/images/fantastic-four.png" alt="" class="flash-bump">
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<div>
+						<h6>Kat Fang / <a href="http://twitter.com/fangedkat">@fangedkat</a></h6>
+					</div>
+
+					<div>
+						<h6>David East / <a href="http://twitter.com/eastdotnet">@eastdotnet</a></h6>
+					</div>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
