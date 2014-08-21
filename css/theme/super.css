@@ -1,15 +1,17 @@
-@font-face {
+/* @font-face {
   font-family: 'Gotham Thin';
-  src: url("font/Gotham-Thin.otf") format("opentype"); }
-
+  src: url("font/Gotham-Thin.otf") format("opentype");
+}
+ */
 @font-face {
   font-family: 'BADABB';
   src: url("font/BADABB__.TTF") format("truetype"); }
 
-@font-face {
+/* @font-face {
   font-family: 'Adam';
-  src: url("font/adam.ttf") format("truetype"); }
-
+  src: url("font/adam.ttf") format("truetype");
+}
+ */
 .text-swift {
   color: #f08e38 !important; }
 
@@ -31,6 +33,15 @@
 img.flash-bump {
   margin-top: 80px !important; }
 
+.medium-list li {
+  font-size: 62px !important;
+  line-height: 124px !important; }
+
+.big-list li {
+  font-size: 72px !important;
+  line-height: 144px !important;
+  list-style-type: none !important; }
+
 .slides section > h1 {
   margin-bottom: 100px; }
 .slides section > h2 {
@@ -39,42 +50,31 @@ img.flash-bump {
   margin-bottom: 80px; }
 .slides section > h4 {
   margin-bottom: 80px; }
-.slides section ol li, .slides section p {
-  font-size: 38px; }
 .slides blockquote {
   font-style: normal; }
-.slides pre code {
-  font-size: 20px; }
-.slides .era-point {
-  margin-bottom: 40px; }
-.slides .api-point {
-  font-family: Menlo, Courier;
-  color: #fffbf3 !important;
-  text-align: left; }
-.slides #json-graph {
-  text-align: left; }
-  .slides #json-graph h4 {
-    text-align: left; }
-  .slides #json-graph h4:nth-child(2) {
-    margin-left: 140px; }
-  .slides #json-graph h4:nth-child(3) {
-    margin-left: 540px; }
-  .slides #json-graph h4:nth-child(4) {
-    margin-left: 800px; }
-
-#era {
-  padding: 15px;
-  text-transform: uppercase;
-  font-size: 16px; }
+.slides pre {
+  width: 100%; }
+  .slides pre code {
+    font-size: 34px;
+    line-height: 45px;
+    max-height: 600px; }
 
 img {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important; }
 
-h1.big-plus {
-  display: inline-block;
-  vertical-align: bottom; }
+.side-hero {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 80px !important; }
+
+#swift-logo {
+  float: left; }
+
+#firebase-logo {
+  float: right; }
 
 /*********************************************
  * GLOBAL STYLES
@@ -84,8 +84,8 @@ body {
   background-color: #f0f0f0; }
 
 .reveal {
-  font-family: "Adam", sans-serif;
-  font-size: 32px;
+  font-family: "Helvetica-Neue", sans-serif;
+  font-size: 42px;
   font-weight: normal;
   letter-spacing: -0.02em;
   color: #555254; }

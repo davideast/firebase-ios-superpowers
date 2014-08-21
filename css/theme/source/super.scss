@@ -4,21 +4,21 @@
 @import "../template/settings";
 // ---------------------------------------------
 
-@font-face {
+/* @font-face {
   font-family: 'Gotham Thin';
   src: url("font/Gotham-Thin.otf") format("opentype");
 }
-
+ */
 @font-face {
   font-family: 'BADABB';
   src: url("font/BADABB__.TTF") format("truetype");
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Adam';
   src: url("font/adam.ttf") format("truetype");
 }
-
+ */
 $white: #ffffff;
 $black: #000000;
 $super-black: #02010F;
@@ -44,7 +44,7 @@ $bumble-dark: #c5a530;
 
 
 $font: 'BADABB', Arial;
-$mainFont: "Adam",sans-serif;
+$mainFont: "Helvetica-Neue",sans-serif;
 
 $brand-primary: $tarheel;
 $brand-warning: $discs;
@@ -61,7 +61,7 @@ $backgroundColor: #F0F0F0;
 
 // Primary/body text
 $mainFont: $mainFont;
-$mainFontSize: 32px;
+$mainFontSize: 42px;
 $mainColor: #555254;
 
 // Headings
@@ -117,6 +117,21 @@ img.flash-bump {
   margin-top: 80px !important;
 }
 
+.medium-list {
+  li {
+    font-size: 62px !important;
+    line-height: 124px !important;
+  }
+}
+
+.big-list {
+  li {
+    font-size: 72px !important;
+    line-height: 144px !important;
+    list-style-type: none !important;
+  }
+}
+
 .slides {
   section {
     > h1 {
@@ -131,50 +146,22 @@ img.flash-bump {
     >h4 {
       margin-bottom: 80px;
     }
-    ol li, p {
-      font-size: 38px;
-    }
   }
 
   blockquote {
     font-style: normal;
   }
 
-  pre code {
-    font-size: 20px;
-  }
+  pre {
+    width: 100%;
 
-  .era-point {
-    margin-bottom: 40px;
-  }
-
-  .api-point {
-    font-family: Menlo, Courier;
-    color: $cream !important;
-    text-align: left;
-  }
-
-  #json-graph {
-    text-align: left;
-    h4 {
-      text-align: left;
-    }
-    h4:nth-child(2) {
-      margin-left: 140px;
-    }
-    h4:nth-child(3) {
-      margin-left: 540px;
-    }
-    h4:nth-child(4) {
-      margin-left: 800px;
+    code {
+      font-size: 34px;
+      line-height: 45px;
+      max-height: 600px;
     }
   }
-}
 
-#era {
-  padding: 15px;
-  text-transform: uppercase;
-  font-size: 16px;
 }
 
 img {
@@ -183,10 +170,22 @@ img {
   box-shadow: none !important;
 }
 
-h1.big-plus {
-  display: inline-block;
-  vertical-align: bottom;
+.side-hero {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 80px !important;
 }
+
+#swift-logo {
+  float: left;
+}
+
+#firebase-logo {
+  float: right;
+}
+
+
 
 // Theme template ------------------------------
 @import "../template/theme";

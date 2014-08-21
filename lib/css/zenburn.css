@@ -7,7 +7,7 @@ based on dark.css by Ivan Sagalaev
 
 pre code {
   display: block; padding: 0.5em;
-  background: #3F3F3F;
+  background: #322f31;
   color: #DCDCDC;
 }
 
@@ -90,7 +90,7 @@ pre .attr_selector,
 pre .pseudo,
 pre .apache .cbracket,
 pre .tex .formula {
-  color: #CC9393;
+  color: #50b1ff;
 }
 
 pre .shebang,
@@ -100,7 +100,7 @@ pre .java .annotation,
 pre .template_comment,
 pre .pi,
 pre .doctype {
-  color: #7F9F7F;
+  color: #5b865b;
 }
 
 pre .coffeescript .javascript,
